@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingChat from "@/components/FloatingChat";
 import DesignCard from "@/components/DesignCard";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -312,6 +313,7 @@ export default function Gallery() {
         </DialogContent>
       </Dialog>
 
+      <FloatingChat />
       <Footer />
     </div>
   );

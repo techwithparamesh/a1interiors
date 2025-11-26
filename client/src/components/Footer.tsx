@@ -74,12 +74,8 @@ export default function Footer() {
 
           {/* Contact Details with icons */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Contact Us</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4">Get in Touch</h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-white/80 text-sm">
-                <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+919989396144" className="hover:text-primary transition-colors">+91 9989396144</a>
-              </li>
               <li className="flex items-center gap-2 text-white/80 text-sm">
                 <Phone className="w-5 h-5 text-primary" />
                 <a href="tel:+917702045767" className="hover:text-primary transition-colors">+91 7702045767</a>

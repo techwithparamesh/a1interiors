@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingChat from "@/components/FloatingChat";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -33,8 +34,8 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+91 9989396144", "+91 7702045767"],
-      link: "tel:+919989396144",
+      details: ["+91 7702045767"],
+      link: "tel:+917702045767",
     },
     {
       icon: Mail,
@@ -241,6 +242,7 @@ export default function Contact() {
         </div>
       </section>
 
+      <FloatingChat />
       <Footer />
     </div>
   );

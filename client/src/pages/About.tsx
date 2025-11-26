@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingChat from "@/components/FloatingChat";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
@@ -218,6 +219,7 @@ export default function About() {
         </div>
       </section>
 
+      <FloatingChat />
       <Footer />
     </div>
   );

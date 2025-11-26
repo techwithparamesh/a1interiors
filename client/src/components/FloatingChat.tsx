@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function FloatingChat() {
   const handleWhatsAppClick = () => {
-    // Replace with your actual WhatsApp number
-    window.open("https://wa.me/919876543210", "_blank");
+    window.open("https://wa.me/917702045767", "_blank");
   };
 
   const handleInstagramClick = () => {

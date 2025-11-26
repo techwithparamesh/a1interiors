@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingChat from "@/components/FloatingChat";
 import ConsultationForm from "@/components/ConsultationForm";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -121,6 +122,7 @@ export default function Consultation() {
         </div>
       </section>
 
+      <FloatingChat />
       <Footer />
     </div>
   );
