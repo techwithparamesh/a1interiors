@@ -148,7 +148,7 @@ export default function HeroCarousel({
       </section>
 
       {/* Mobile Consultation Form - Below Hero */}
-      <div className="lg:hidden bg-background py-8 px-4">
+      <div className="lg:hidden bg-background py-4 px-4">
         <div className="max-w-md mx-auto">
           <DesignerConsultationCard />
         </div>

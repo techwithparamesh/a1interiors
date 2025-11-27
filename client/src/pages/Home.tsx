@@ -262,7 +262,7 @@ export default function Home() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Add spacing for mobile consultation form */}
-      <div className="lg:hidden h-48" />
+      <div className="lg:hidden h-8" />
 
       {/* Floating Chat Buttons */}
       <FloatingChat />
