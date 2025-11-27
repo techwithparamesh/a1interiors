@@ -14,7 +14,7 @@ export default function FloatingChat() {
 
   const handleEmailClick = () => {
     // Replace with your actual email
-    window.location.href = "mailto:hello@a1interiors.com";
+    window.location.href = "mailto:info@interiors.co";
   };
 
   return (

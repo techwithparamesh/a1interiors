@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-white/80 text-sm">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:a1interiors@gmail.com" className="hover:text-primary transition-colors">a1interiors@gmail.com</a>
+                <a href="mailto:info@interiors.co" className="hover:text-primary transition-colors">info@interiors.co</a>
               </li>
               <li className="flex items-center gap-2 text-white/80 text-sm">
                 <MapPin className="w-8 h-8 text-primary" />

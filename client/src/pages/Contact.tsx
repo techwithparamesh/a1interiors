@@ -40,8 +40,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Address",
-      details: ["a1interiors@gmail.com"],
-      link: "mailto:a1interiors@gmail.com",
+      details: ["info@interiors.co"],
+      link: "mailto:info@interiors.co",
     },
     {
       icon: MapPin,
