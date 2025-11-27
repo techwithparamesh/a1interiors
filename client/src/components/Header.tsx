@@ -45,7 +45,7 @@ export default function Header() {
                 <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center">
                   <span className="text-primary-foreground font-heading font-bold text-lg">🏠</span>
                 </div>
-                <span className="font-heading font-bold text-xl text-foreground hidden sm:block">
+                <span className="font-heading font-bold text-xl text-foreground">
                   A1 Interiors
                 </span>
               </div>
