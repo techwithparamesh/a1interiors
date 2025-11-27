@@ -137,19 +137,19 @@ export default function Gallery() {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <div className="flex justify-center mb-12">
-              <TabsList className="grid grid-cols-6 w-full max-w-4xl">
-                <TabsTrigger value="all" data-testid="tab-all">All Designs</TabsTrigger>
-                <TabsTrigger value="living" data-testid="tab-living">Living Room</TabsTrigger>
-                <TabsTrigger value="kitchen" data-testid="tab-kitchen">Kitchen</TabsTrigger>
-                <TabsTrigger value="bedroom" data-testid="tab-bedroom">Bedroom</TabsTrigger>
-                <TabsTrigger value="bathroom" data-testid="tab-bathroom">Bathroom</TabsTrigger>
-                <TabsTrigger value="wardrobe" data-testid="tab-wardrobe">Wardrobe</TabsTrigger>
+            <div className="mb-12 overflow-x-auto">
+              <TabsList className="inline-flex w-auto min-w-full sm:grid sm:grid-cols-6 sm:w-full sm:max-w-4xl mx-auto">
+                <TabsTrigger value="all" data-testid="tab-all" className="whitespace-nowrap">All Designs</TabsTrigger>
+                <TabsTrigger value="living" data-testid="tab-living" className="whitespace-nowrap">Living Room</TabsTrigger>
+                <TabsTrigger value="kitchen" data-testid="tab-kitchen" className="whitespace-nowrap">Kitchen</TabsTrigger>
+                <TabsTrigger value="bedroom" data-testid="tab-bedroom" className="whitespace-nowrap">Bedroom</TabsTrigger>
+                <TabsTrigger value="bathroom" data-testid="tab-bathroom" className="whitespace-nowrap">Bathroom</TabsTrigger>
+                <TabsTrigger value="wardrobe" data-testid="tab-wardrobe" className="whitespace-nowrap">Wardrobe</TabsTrigger>
               </TabsList>
             </div>
 
             <TabsContent value="all">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
                 {designs.all.map((design, index) => (
                   <DesignCard
                     key={index}
@@ -163,7 +163,7 @@ export default function Gallery() {
             </TabsContent>
 
             <TabsContent value="living">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
                 {designs.living.map((design, index) => (
                   <DesignCard
                     key={index}
@@ -176,7 +176,7 @@ export default function Gallery() {
             </TabsContent>
 
             <TabsContent value="kitchen">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
                 {designs.kitchen.map((design, index) => (
                   <DesignCard
                     key={index}
@@ -190,7 +190,7 @@ export default function Gallery() {
             </TabsContent>
 
             <TabsContent value="bedroom">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
                 {designs.bedroom.map((design, index) => (
                   <DesignCard
                     key={index}
@@ -203,7 +203,7 @@ export default function Gallery() {
             </TabsContent>
 
             <TabsContent value="bathroom">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
                 {designs.bathroom.map((design, index) => (
                   <DesignCard
                     key={index}
@@ -216,7 +216,7 @@ export default function Gallery() {
             </TabsContent>
 
             <TabsContent value="wardrobe">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
                 {designs.wardrobe.map((design, index) => (
                   <DesignCard
                     key={index}

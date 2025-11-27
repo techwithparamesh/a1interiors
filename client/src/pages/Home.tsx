@@ -342,7 +342,7 @@ export default function Home() {
           </div>
 
           {/* Grid without Navigation */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
             {endToEndOfferings.slice(0, 4).map((design, index) => (
               <DesignCard
                 key={index}
@@ -356,7 +356,7 @@ export default function Home() {
       </section>
 
       {/* Modular Kitchen Designs Section - SCREENSHOT: modular-kitchen-designs.png */}
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-white hidden sm:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="font-heading font-bold text-3xl">Modular Kitchen Designs</h2>
@@ -378,7 +378,7 @@ export default function Home() {
       </section>
 
       {/* Living Room Designs Section - SCREENSHOT: living-room-designs.png */}
-      <section className="py-8 bg-background">
+      <section className="py-8 bg-background hidden sm:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="font-heading font-bold text-3xl">Living Room Designs</h2>
@@ -399,7 +399,7 @@ export default function Home() {
       </section>
 
       {/* Wardrobe Designs Section - SCREENSHOT: wardrobe-designs.png */}
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-white hidden sm:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="font-heading font-bold text-3xl">Wardrobe Designs</h2>
@@ -421,7 +421,7 @@ export default function Home() {
       </section>
 
       {/* Bedroom Designs Section */}
-      <section className="py-8 bg-background">
+      <section className="py-8 bg-background hidden sm:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="font-heading font-bold text-3xl">Bedroom Designs</h2>

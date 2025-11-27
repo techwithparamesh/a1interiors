@@ -67,46 +67,47 @@ export default function HeroCarousel({
   };
 
   return (
-    <section className="relative w-full h-[600px] md:h-[700px] overflow-hidden bg-background">
-      {/* Background Images */}
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-        >
+    <>
+      <section className="relative w-full h-[600px] md:h-[700px] overflow-hidden bg-background">
+        {/* Background Images */}
+        {slides.map((slide, index) => (
           <div
-            className="w-full h-full bg-cover bg-center"
-            style={{ 
-              backgroundImage: `url(${slide.image})`,
-              backgroundColor: '#4a3228' // Fallback brown color
-            }}
-          />
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
-        </div>
-      ))}
-
-      {/* Content Container */}
-      <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="h-full flex items-center justify-between gap-8">
-          {/* Left Side - Hero Text */}
-          <div className="flex-1 max-w-xl">
-            <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight">
-              {slides[currentSlide].title}
-            </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 font-light">
-              {slides[currentSlide].subtitle}
-            </p>
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{ 
+                backgroundImage: `url(${slide.image})`,
+                backgroundColor: '#4a3228' // Fallback brown color
+              }}
+            />
+            {/* Overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
           </div>
+        ))}
 
-          {/* Right Side - Consultation Form Card */}
-          <div className="hidden lg:block">
-            <DesignerConsultationCard />
+        {/* Content Container */}
+        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="h-full flex items-center justify-between gap-8">
+            {/* Left Side - Hero Text */}
+            <div className="flex-1 max-w-xl">
+              <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight">
+                {slides[currentSlide].title}
+              </h1>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 font-light">
+                {slides[currentSlide].subtitle}
+              </p>
+            </div>
+
+            {/* Right Side - Consultation Form Card */}
+            <div className="hidden lg:block">
+              <DesignerConsultationCard />
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Navigation Arrows */}
       <Button
@@ -144,13 +145,14 @@ export default function HeroCarousel({
           />
         ))}
       </div>
+      </section>
 
       {/* Mobile Consultation Form - Below Hero */}
-      <div className="lg:hidden absolute -bottom-40 left-0 right-0 px-4">
+      <div className="lg:hidden bg-background py-8 px-4">
         <div className="max-w-md mx-auto">
           <DesignerConsultationCard />
         </div>
       </div>
-    </section>
+    </>
   );
 }
