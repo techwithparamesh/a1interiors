@@ -74,10 +74,6 @@ export default function Home() {
   // Why Choose Us features data
   const whyChooseUsFeatures = [
     {
-      icon: <Building2 className="w-12 h-12 text-primary" />,
-      title: "40 Cities",
-    },
-    {
       icon: <Calendar className="w-12 h-12 text-primary" />,
       title: "Delivery in 45 days*",
     },
@@ -120,7 +116,6 @@ export default function Home() {
     { number: "600+", label: "In-House Designers" },
     { number: "55000+", label: "Homes Delivered" },
     { number: "75", label: "Studios" },
-    { number: "40", label: "Cities" },
   ];
 
   const endToEndOfferings = [
